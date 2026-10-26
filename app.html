@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My reports | Quillpage</title><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css"></head><body>
+<header class="top"><div class="wrap"><a class="brand" href="index.html"><img src="logo.svg" alt="">Quillpage</a><nav><span id="who"></span> <button class="btn alt small" id="out">Sign out</button></nav></div></header>
+<main class="wrap">
+<section id="home"><div class="bar" style="justify-content:space-between"><h1 style="font-size:2rem;margin:0">Your reports</h1><button class="btn" id="new">Create a report</button></div><ul class="list" id="list"></ul><p id="empty" class="hint">Your next great report starts here. Add your notes and photographs, and we will lay them out as a clean document.</p>
+<details style="margin-top:40px"><summary>Account</summary><p class="hint">Reports are stored only in this browser in this prototype.</p><button class="btn danger small" id="del">Delete my account and all data</button></details></section>
+<section id="edit" hidden><h1 style="font-size:2rem">New report</h1><form id="f" class="card">
+<label for="title">Report title</label><input id="title" required>
+<div class="row"><div><label for="type">Type</label><select id="type"><option>Event report</option><option>Project report</option><option>Newsletter</option><option>News or feature story</option><option>General report</option></select></div><div><label for="date">Date</label><input id="date" type="date"></div></div>
+<div class="row"><div><label for="venue">Venue</label><input id="venue"></div><div><label for="author">Author</label><input id="author"></div></div>
+<label for="notes">Your notes</label><textarea id="notes" required></textarea><p class="hint">Separate points or paragraphs with a blank line. Your wording is kept as written; refine it in the preview.</p>
+<label for="quotes">Quotations (optional)</label><textarea id="quotes" style="min-height:80px"></textarea><p class="hint">One per line, like: "Quote text" - Speaker name. Used exactly as typed.</p>
+<label for="photos">Photographs</label><input id="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple><div id="pl"></div>
+<div class="bar"><button class="btn" type="submit">Generate my report</button><button class="btn alt" type="button" id="cancel">Cancel</button></div><p class="msg" id="m" role="alert"></p></form></section>
+<section id="prev" hidden><div class="bar noprint"><button class="btn alt" id="back">Back</button><button class="btn" id="save">Save changes</button><button class="btn" id="print">Download PDF</button></div><p class="hint noprint">Click any text to edit. Highlighted items are missing details. In the print dialog choose "Save as PDF".</p><article id="doc" contenteditable="true"></article></section>
+</main>
+<footer><div class="wrap"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><p>&copy; 2026 Kinton Technologies. Quillpage is a working name and a product of Kinton Technologies.</p></div></footer><script src="app.js"></script></body></html>
